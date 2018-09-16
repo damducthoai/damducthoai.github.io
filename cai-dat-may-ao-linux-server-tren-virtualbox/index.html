@@ -5,16 +5,20 @@
   
 
   
-  <title>butchjgo.com</title>
+  <title>Cài đặt máy ảo linux server trên VirtualBox | butchjgo.com</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="programming">
-<meta property="og:type" content="website">
-<meta property="og:title" content="butchjgo.com">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Trong video này mình sẽ hướng dẫn mọi người cách cài đặt máy ảo linux server trên VirtualBox. Những bước chính như sau  Cài đặt linux server trên VirtualBox Cài đặt virtualbox additions guest Thiết lậ">
+<meta name="keywords" content="programming">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cài đặt máy ảo linux server trên VirtualBox">
+<meta property="og:url" content="http://yoursite.com/cai-dat-may-ao-linux-server-tren-virtualbox/index.html">
 <meta property="og:site_name" content="butchjgo.com">
+<meta property="og:description" content="Trong video này mình sẽ hướng dẫn mọi người cách cài đặt máy ảo linux server trên VirtualBox. Những bước chính như sau  Cài đặt linux server trên VirtualBox Cài đặt virtualbox additions guest Thiết lậ">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-09-16T12:35:17.192Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="butchjgo.com">
+<meta name="twitter:title" content="Cài đặt máy ảo linux server trên VirtualBox">
+<meta name="twitter:description" content="Trong video này mình sẽ hướng dẫn mọi người cách cài đặt máy ảo linux server trên VirtualBox. Những bước chính như sau  Cài đặt linux server trên VirtualBox Cài đặt virtualbox additions guest Thiết lậ">
   
     <link rel="alternate" href="/atom.xml" title="butchjgo.com" type="application/atom+xml">
   
@@ -61,71 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-cai-dat-linux-ubuntu-16-04-lts-tren-virtualbox" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/cai-dat-linux-ubuntu-16-04-lts-tren-virtualbox/" class="article-date">
-  <time datetime="2016-05-05T17:00:00.000Z" itemprop="datePublished">2016-05-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/cai-dat-linux-ubuntu-16-04-lts-tren-virtualbox/">Cài Đặt Linux Ubuntu 16.04 LTS trên VirtualBox</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Trong video này mình sẽ hướng dẫn các bạn cách cài đặt Ubuntu 16.04 LTS trên máy ảo Virtualbox</p>
-<ul>
-<li>Tạo máy ảo Virtualbox cho ubuntu</li>
-<li>Setup ubuntu trên máy ảo</li>
-<li>Cài đặt gói mở rộng virtualbox trên ubuntu (gói này rất quan trọng giúp bạn sử dụng share folder, thiết lập card mạng và nhiều thứ khác nữa…)</li>
-<li>Review sơ về ubuntu 16.04 LTS so với ubuntu 14.04 LTS</li>
-</ul>
-<p>Các công cụ cần có:</p>
-<ol>
-<li>Chương trình máy ảo VirtualBox đã cài extention</li>
-<li>File ISO của Ubuntu( 16.04 LTS)</li>
-</ol>
-<p>Ok, mọi người làm theo hướng dẫn trong video dưới đây.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lVLiWaerVHE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-<p>Review sơ về ubuntu 16.04 LTS:</p>
-<p>Nói đánh giá vậy thôi chứ tôi cũng không có nhiều kinh nghiệm, ở góc độ này chúng ta chỉ xem có những gì đổi mới trong giao diện unity, tôi là một người dùng bình thường, giao diện unity mới không có nhiều khác biệt lắm. Chúng ta có thể thấy một chút thay đổi về Ubuntu Software Center và System Mornitor của unity.</p>
-<p><img src="/images/Screenshot-from-2016-05-06-165605-768x432.png" alt="Ubuntu 16.04 LTS secreenshot"></p>
-<p>Ngoài ra do thường xuyên làm việc với terminal nên tôi nhận ra rằng tính năng phím tắt nhanh trên terminal bị thay đổi. Đối với Ubuntu 14.04 TTS khi chuột phải và nhấn p trên terminal thì nội dung clipboard text sẽ tự động paste vào nhưng từ Ubuntu 15 trở lên tính năng này tôi không còn thấy nữa, cũng khá bất tiện khi phải dùng chuột hoặc mũi tên lên xuống để thực hiện nhanh thao tác paste.</p>
-<p>Vậy có nên cập nhật lên Ubuntu 16.04 LTS không. Vâng câu trả lời là tùy bạn, với những thay đổi không đáng kể đó tôi quyết định không nâng cấp hệ thống của mình. Đối với các hệ thống phiên bản cũ như tôi 14.04 LTS bạn có thể cập nhật mọi thứ thông qua câu lệnh</p>
-<ul>
-<li>apt-get clean</li>
-<li>apt-get update</li>
-<li>apt-get dist-upgrade</li>
-</ul>
-<p>Mà tôi cũng phải cảnh báo nếu bạn có ý định cập nhật rằng vì đây là phiên bản Ubuntu mới ra nên không tránh khỏi việc không tương thích với một số phần mềm. Tôi còn nhớ rằng mình đã khá vất vả để giúp VMware WorkStation hoạt động trên Ubuntu 14.04.4 khi nâng cấp từ phiên bản 14.04.3. QUa thời gian trải nghiệm ngắn tôi nhận ra rằng Ubuntu Software Center họat động không tốt lắm khi tìm kiếm các phần mềm. Có thể là do phiên bản mới sources list chưa cập nhật đầy đủ.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/cai-dat-linux-ubuntu-16-04-lts-tren-virtualbox/" data-id="cjm4uhsnc0001pctpjd17r3mq" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-cai-dat-may-ao-linux-server-tren-virtualbox" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-cai-dat-may-ao-linux-server-tren-virtualbox" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/cai-dat-may-ao-linux-server-tren-virtualbox/" class="article-date">
   <time datetime="2016-05-03T17:00:00.000Z" itemprop="datePublished">2016-05-04</time>
@@ -138,8 +78,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/cai-dat-may-ao-linux-server-tren-virtualbox/">Cài đặt máy ảo linux server trên VirtualBox</a>
+    <h1 class="article-title" itemprop="name">
+      Cài đặt máy ảo linux server trên VirtualBox
     </h1>
   
 
@@ -171,11 +111,23 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/cai-dat-linux-ubuntu-16-04-lts-tren-virtualbox/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Cài Đặt Linux Ubuntu 16.04 LTS trên VirtualBox
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
-
+</article>
 
 </section>
         
